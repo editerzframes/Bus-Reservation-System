@@ -1,0 +1,24 @@
+CREATE TABLE login(
+user_id int(10) NOT NULL AUTO_INCREMENT,
+username varchar(255) NOT NULL,
+password varchar(255) NOT NULL,
+PRIMARY KEY (user_id)
+);
+
+CREATE TABLE destinations(
+des_id int(10) NOT NULL AUTO_INCREMENT,
+name varchar(255) NOT NULL,
+price varchar(255) NOT NULL,
+ava varchar(255) NOT NULL,
+PRIMARY KEY (des_id)
+);
+
+CREATE TABLE tickets(
+tik_id int(10) NOT NULL AUTO_INCREMENT,
+name varchar(255) NOT NULL,
+des varchar(255) NOT NULL,
+num_pass int(50) NOT NULL,
+num_passdiss int(50) NOT NULL,
+total int(50) NOT NULL,
+PRIMARY KEY (tik_id)
+);
